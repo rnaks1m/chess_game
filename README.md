@@ -58,13 +58,36 @@ git clone git@github.com:rnaks1m/chess_game.git
 ```
 
 ### Сборка и запуск
+
+#### Сборка библиотек Oxygine
+Перейдите в корневую папку `oxygine-framework` из корневой папки проекта:
+```
+cd oxygine-framework
+```
+Создайте папку `build` и перейдите в нее:
+```
+mkdir build && cd build
+```
+Сконфигурируйте сборку библиотек фреймворка в нужном режиме Release (Debug)
+```
+cmake .. -DCMAKE_BUILD_TYPE=Release
+```
+Скомпилируйте библиотеки фреймворка
+```
+cmake --build .
+```
+
+#### Сборка приложения
 Перейдите в корневую папку проекта. Создайте папку `build` и перейдите в нее:
 ```
 mkdir build && cd build
 ```
+Сконфигурируйте сборку приложения
 ```
-cmake .. -DCMAKE_BUILD_TYPE=Release # или Debug
+cmake .. -DCMAKE_BUILD_TYPE=Release
 ```
+Скомпилируйте приложение
 ```
 cmake --build .
 ```
+
