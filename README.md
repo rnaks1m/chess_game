@@ -24,12 +24,14 @@
 ## Сборка и запуск приложения
 
 ### Клонирование репозитория
+
 В папке, где хотите разместить проект, введите команду
 ```
 git clone git@github.com:rnaks1m/chess_game.git
 ```
 
 ### Сборка и запуск приложения в Docker
+
 Перейдите в корневую папку проекта и введите команду:
 ```
 docker build -t chess_game .
@@ -48,3 +50,4 @@ docker run -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix chess_g
 ```
 xhost -local:docker
 ```
+
