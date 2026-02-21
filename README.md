@@ -34,3 +34,17 @@ git clone git@github.com:rnaks1m/chess_game.git
 ```
 docker build -t chess_game .
 ```
+После сборки образа, запустите контейнер. Для этого выполните команды:
+
+Необходимо разрешить доступ для проброса графического интерфейса от Docker к X11 серверу хоста. Для этого введите команду:
+```
+xhost +local:docker
+```
+Запустите контейнер с пробросом графического интерфейса на хост:
+```
+docker run -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix chess_game
+```
+Закройте доступ после работы программы:
+```
+xhost -local:docker
+```
