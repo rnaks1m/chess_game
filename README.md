@@ -94,5 +94,7 @@ cmake .. -DCMAKE_BUILD_TYPE=Release
 ```
 cmake --build .
 ```
+После сборки исполняемый файл вместе с папкой `data` будет находиться в папке `bin`.
+
 
 
