@@ -49,5 +49,22 @@ docker run -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix chess_g
 xhost -local:docker
 ```
 
+## Сборка и запуск приложения вручную
 
+### Клонирование репозитория
+В папке, где хотите разместить проект, введите команду
+```
+git clone git@github.com:rnaks1m/chess_game.git
+```
 
+### Сборка и запуск
+Перейдите в корневую папку проекта. Создайте папку `build` и перейдите в нее:
+```
+mkdir build && cd build
+```
+```
+cmake .. -DCMAKE_BUILD_TYPE=Release # или Debug
+```
+```
+cmake --build .
+```
