@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no" ?>
+<resources>
+    <atlas>
+        <image id="w_king" file="data/w_king.png" />
+        <image id="w_queen" file="data/w_queen.png" />
+        <image id="w_rook" file="data/w_rook.png" />
+        <image id="w_bishop" file="data/w_bishop.png" />
+        <image id="w_knight" file="data/w_knight.png" />
+        <image id="w_pawn" file="data/w_pawn.png" />
+
+        <image id="b_king" file="data/b_king.png" />
+        <image id="b_queen" file="data/b_queen.png" />
+        <image id="b_rook" file="data/b_rook.png" />
+        <image id="b_bishop" file="data/b_bishop.png" />
+        <image id="b_knight" file="data/b_knight.png" />
+        <image id="b_pawn" file="data/b_pawn.png" />
+    </atlas>
+</resources>
