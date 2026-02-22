@@ -6,12 +6,12 @@
 #include "oxygine/actor/ColorRectSprite.h"
 
 enum class FigureType {
-    KING = 0,
-    QUEEN = 1,
-    ROOK = 2,
-    BISHOP = 3,
-    KNIGHT = 4,
-    PAWN = 5
+    KING,
+    QUEEN,
+    ROOK,
+    BISHOP,
+    KNIGHT,
+    PAWN
 };
 
 DECLARE_SMART(Figure, spFigure);
@@ -36,7 +36,7 @@ DECLARE_SMART(Game, spGame);
 class Game : public oxygine::Actor {
 public:
     Game();
-    
+
     void Initialization();
     void UpdateSizeWindow(const oxygine::Vector2& new_size);
 
